@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar">
+
+    <TextView
+        android:id="@+id/deleteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Delete account"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Input your current password to delete"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passwordForDeleteET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="Password"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:alpha="0.5"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+            <Button
+                android:id="@+id/deleteAccountDialogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyleMy"
+                android:text="Delete"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginVertical="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"/>
+            <Button
+                android:id="@+id/cancelAccountDialogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyleMy"
+                android:text="Cancel"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginVertical="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:context=".activities.SupportActivity"
+    android:layout_marginHorizontal="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have a question?"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send it to our email"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:alpha="0.7"/>
+
+    <!--<EditText
+        android:id="@+id/supportEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Your email"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"/> -->
+    <EditText
+        android:id="@+id/supportMessageET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Your message"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/supportSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyleMy"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_marginVertical="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="submitQuestion"/>
+
+</LinearLayout>
+</ScrollView>

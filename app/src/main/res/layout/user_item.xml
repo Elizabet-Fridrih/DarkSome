@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back"
+    style="@style/CardViewMy">
+
+    <RelativeLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="4dp"
+        android:background="@color/back"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            app:srcCompat="@drawable/for_username_at_list" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/liner_username" />
+        <TextView
+            android:id="@+id/timeDialogTV"
+            android:text="12:45"
+            android:textColor="@color/white"
+            android:alpha="0.6"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bar"
+            android:layout_marginEnd="-145dp"
+            android:layout_alignEnd="@id/userNameTextV"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/im"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/im3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/circle_count_mess" />
+
+            <TextView
+                android:id="@+id/countMessTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/back"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/avatarImageV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/user_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_image"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="1dp" />
+
+
+        <TextView
+            android:id="@+id/userNameTextV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="-3dp"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/messTV"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="35dp"
+            android:maxLength="55"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lastSeenTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last seen at 12:25 PM, 4 Jul"
+            android:textColor="@color/white"
+            android:alpha="0.6"
+            android:textSize="16sp"
+            android:layout_marginStart="120dp"
+            android:textStyle="italic"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

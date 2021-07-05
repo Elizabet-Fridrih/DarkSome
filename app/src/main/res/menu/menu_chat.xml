@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="Поиск"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction = "never"/>
+    <item
+        android:id="@+id/action_clean"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_baseline_cleaning_services_24"
+        android:title="Очистить историю"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notificOff"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_baseline_notifications_off_24"
+        android:title="Отключить уведомления"
+        app:showAsAction="never" />
+</menu>

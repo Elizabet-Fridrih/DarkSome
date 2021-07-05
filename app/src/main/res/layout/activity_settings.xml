@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/bar"/>
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_image"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="3dp"/>
+        <ProgressBar
+            android:id="@+id/progressBarAvatar"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:progressTintMode="src_over"
+            android:backgroundTintMode="src_over"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/setAvatarBtn"
+            android:background = "@drawable/ic_baseline_add_a_photo_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageAvatar"
+            android:layout_marginTop="10dp"
+            android:onClick="setAvatar"/>
+
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="34dp"/>
+        <TextView
+            android:id="@+id/loginTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/@login"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Account"
+        android:padding="10dp"
+        android:layout_marginLeft="13dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/changeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change name"
+        android:padding="15dp"
+        android:paddingStart="40dp"
+        android:clickable="true"
+        android:onClick="changeName"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bar"/>
+    <TextView
+        android:id="@+id/changeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change email"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        android:paddingStart="40dp"
+        android:clickable="true"
+        android:onClick="changeEmail"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/bar"/>
+    <TextView
+        android:id="@+id/currentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Your current email: "
+        android:paddingHorizontal="15dp"
+        android:paddingTop="5dp"
+        android:paddingStart="40dp"
+        android:clickable="true"
+        android:onClick="changeEmail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bar"/>
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bar"
+        android:clickable="true"
+        android:onClick="changePassword"
+        android:padding="15dp"
+        android:paddingStart="40dp"
+        android:text="Change password"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/changeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change login"
+        android:padding="15dp"
+        android:paddingStart="40dp"
+        android:clickable="true"
+        android:onClick="changeLogin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/deleteAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyleMy"
+            android:text="Delete account"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="deleteAccount"/>
+    </RelativeLayout>
+
+</LinearLayout>
